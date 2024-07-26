@@ -1230,10 +1230,10 @@ function ArrayFieldLibrary:CreateWindow(Settings)
     	imageLabel.Visible = true
 	imageLabel.ScaleType = "Fit"
     	imageLabel.Parent = LoadingFrame
-	LoadingFrame.Title.Text = Settings.LoadingTitle or "Arrayfield Interface Suite"
+	LoadingFrame.Title.Text = Settings.LoadingTitle or "External Hub"
 	LoadingFrame.Subtitle.Text = Settings.LoadingSubtitle or "by Sirius | Meta"
-	if Settings.LoadingTitle ~= "Arrayfield Interface Suite" then
-		LoadingFrame.Version.Text = "Arrayfield UI"
+	if Settings.LoadingTitle ~= "External Hub" then
+		LoadingFrame.Version.Text = "External Hub"
 	end
 	Topbar.Visible = false
 	Elements.Visible = false
