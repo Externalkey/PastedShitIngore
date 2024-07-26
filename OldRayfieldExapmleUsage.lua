@@ -255,3 +255,14 @@ local Window = ArrayField:CreateWindow({
 
         end,
     })
+
+
+if getgenv()._UIScale == nil then
+    getgenv()._UIScale = 0.8
+end
+
+if game:GetService("CoreGui"):WaitForChild("ArrayField"):WaitForChild("Main") then
+    local uiScale = Instance.new("UIScale")
+    uiScale.Scale = getgenv()._UIScale
+    uiScale.Parent = game:GetService("CoreGui"):WaitForChild("ArrayField"):WaitForChild("Main")
+end
